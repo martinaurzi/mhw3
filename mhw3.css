@@ -1,0 +1,139 @@
+#album-view {
+    margin: 20px 0;
+    background-color:#eee3e3;
+	width: 66%;
+	margin-left: auto;
+	margin-right: auto;
+	
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px){
+    #album-view{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#album-view .box {
+    margin: 10px;
+    border: 1px solid rgba(97, 74, 74, 0.3);
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: #f5eeee; 
+    width: 45%;
+}
+
+#album-view .new-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+#album-view.reduced-width{
+    width: 33%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#album-view video{
+    margin-top: auto; 
+    max-width: 100%;
+	max-height: 70%;
+}
+
+#album-view h1{
+    color:#383300;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#album-view h2{
+    font-size: 0.9em;
+    color:rgba(97, 74, 74, 0.8);
+}
+
+#album-view p{
+    font-size: 0.8em;
+}
+
+body{
+    margin: 0;
+    font-size: 20px;
+    background-color: #f5eeee;
+}
+
+.green{
+    color: #009933;
+}
+
+#header{ 
+    background-image: url(https://www.coolinmilan.it/wp-content/uploads/2022/07/golds-gym-Milano-.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    font-size: 1em;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#header h1{
+   z-index: 1;
+   color: white;
+   letter-spacing: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.label_bmi{
+    width: 20%;
+}
+
+.red{
+    color: red;
+}
+
+#search_content{
+    width: 66%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+	margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#search_content #search_bmi{
+    margin-right: -9%;
+}
+
+#search_content #tipo{
+    margin-left: 0.5%;
+}
+
+.secondary-info{
+    font-size: 0.7em;
+    color:rgba(0, 0, 0, 0.4);
+    margin-top: -2.5%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Fitness</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="mhw3.css"/> 
+		<script src="mhw3.js" defer="true"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	</head>
+	
+	<body>
+        <header id="header">
+            <h1>GYM</h1>
+        </header>
+
+        <form name ='search_content' id='search_content'>
+            <label id="cerca">Cerca: <input type='text' name = 'content' id ='content'></label>
+           
+            <!-- Ho inserito questo div con classe hidden in modo tale che inizialmente 
+                 sia nascosto. Se poi clicco su BMI calculator, viene mostrato questo e 
+                 nascondo il label corrispondente a cerca-->
+            <div class='hidden' id='search_bmi'>
+                <label>Eta': <input type='text' name = 'eta' id='eta'></label>
+                <label>Peso: <input type='text' name = 'peso' id='peso'></label>
+                <label>Altezza: <input type='text' name = 'altezza' id='altezza'></label>
+            </div>
+
+            <select name = 'tipo' id='tipo'>
+                <option value='muscle'>Target Muscle</option> 
+                <option value='bmi'>BMI Calculator</option>
+                <option value='nutrition'>Nutritional Values</option>
+            </select>
+            
+            <label>&nbsp;<input class="submit" type='submit'></label>   
+        </form>
+			
+		<article id="album-view"></article>
+	</body>
+</html>
